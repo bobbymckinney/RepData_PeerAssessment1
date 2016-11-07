@@ -59,9 +59,9 @@ steps_per_day <- ddply(steps_per_day,c("date"),colwise(sum))
 Now we can plot a histogram of the steps per day.
 
 ```r
-g <- ggplot(aes(x=date,y=steps),data=steps_per_day)
-g + geom_bar(stat="identity") + 
-    labs(x = "Date", y = "Total Steps", title = "Total Steps per Day") + 
+g <- ggplot(aes(x=steps),data=steps_per_day)
+g + geom_histogram(bins=20) + 
+    labs(x = "Steps", y = "Count", title = "Total Steps per Day") + 
     theme_bw()
 ```
 
@@ -169,9 +169,9 @@ Now we can plot a histogram of the imputed data steps per day.
 
 
 ```r
-g3 <- ggplot(aes(x=date,y=steps),data=imputed_steps_per_day)
-g3 + geom_bar(stat="identity") + 
-    labs(x = "Date", y = "Total Steps", title = "Total Steps per Day") + 
+g3 <- ggplot(aes(x=steps),data=imputed_steps_per_day)
+g3 + geom_histogram(bins=20) + 
+    labs(x = "Steps", y = "Count", title = "Total Steps per Day") + 
     theme_bw()
 ```
 
