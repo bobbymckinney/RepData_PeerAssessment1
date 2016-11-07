@@ -65,7 +65,7 @@ g + geom_bar(stat="identity") +
     theme_bw()
 ```
 
-![](PA1_Rmd_file_files/figure-html/plot bar plot of steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot bar plot of steps per day-1.png)<!-- -->
 
 Next we need to find the mean and median of the total steps per day.
 
@@ -109,7 +109,7 @@ g2 + geom_line(na.rm=TRUE) +
     theme_bw()
 ```
 
-![](PA1_Rmd_file_files/figure-html/plot line plot of average steps per interval-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot line plot of average steps per interval-1.png)<!-- -->
 
 Next we need to find the interval with the maximum steps.
 
@@ -175,7 +175,7 @@ g3 + geom_bar(stat="identity") +
     theme_bw()
 ```
 
-![](PA1_Rmd_file_files/figure-html/imputed plot bar plot of steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/imputed plot bar plot of steps per day-1.png)<!-- -->
 
 Next we need to find the mean and median of the total imputed data steps per day.
 
@@ -228,5 +228,5 @@ g4 + geom_line() + facet_grid(. ~ week) +
     theme_bw()
 ```
 
-![](PA1_Rmd_file_files/figure-html/line plot of average steps per interval with week factor-1.png)<!-- -->
+![](PA1_template_files/figure-html/line plot of average steps per interval with week factor-1.png)<!-- -->
 
