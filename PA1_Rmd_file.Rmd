@@ -172,8 +172,8 @@ steps_per_interval_day <- ddply(steps_per_interval_day,c("interval","week"),colw
 Now we create a line plot with the average steps per interval separated by the weeke factor.
 
 ``` {r line plot of average steps per interval with week factor}
-g4 <- ggplot(aes(x = interval, y = steps, color=week), data = steps_per_interval_day)
-g4 + geom_line() + 
+g4 <- ggplot(aes(x = interval, y = steps), data = steps_per_interval_day)
+g4 + geom_line() + facet_grid(. ~ week) +
     labs(x = "Interval", y = "Average Steps", title = "Average Steps per Interval") + 
     theme_bw()
 ```
